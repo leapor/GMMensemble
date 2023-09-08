@@ -5,6 +5,7 @@ close all; clear all;
 % Includes adding letters for each row of subplots and class names. Also 
 % plots isobaths for 250 and 1000 m.
 % ISOBATHS TAKE A LONG TIME TO PLOT!
+% Needs m_map and othercolor packages.
 
 % -------------------------------------------------
 % --- File names ---
