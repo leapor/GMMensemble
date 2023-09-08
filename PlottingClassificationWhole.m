@@ -5,6 +5,7 @@ close all; clear all;
 % and likelihood on the right). Includes adding letters for each row of
 % subplots and class names. Also plots isobaths for 250 and 1000 m.
 % PLOTTING ISOBATHS TAKES A LONG TIME!
+% Needs m_map and othercolor packages.
 
 % -------------------------------------------------
 % --- File names ---
