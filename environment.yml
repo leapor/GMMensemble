@@ -1,4 +1,4 @@
-name: GMMpaper
+name: gmm
 channels:
   - conda-forge
   - defaults
