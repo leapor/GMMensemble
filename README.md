@@ -2,8 +2,10 @@
 
 Source code repository for:
 
-"Unsupervised classification of the Northwestern European seas based on satellite altimetry data"
-Lea Poropat , Dan(i) Jones , Simon D. A. Thomas , and Céline Heuzé
+"Unsupervised classification of the northwestern European seas based on satellite altimetry data"
+by Lea Poropat , Dan(i) Jones , Simon D. A. Thomas , and Céline Heuzé
+
+Using an ensemble of Gaussian Mixture Models (GMMs) with altimetry data to find the regions of similar interannual to decadal sea level variability in the seas of northwestern Europe.
 
 The preprint can be cited as:
 
@@ -27,3 +29,10 @@ conda env create -f environment.yml -n gmm
 
 conda activate gmm
 ```
+
+### List of files
+s01_Preprocessing.ipnyb - prepares the satellite altimetry data with already selected region of interest <br>
+s02_PCA.ipnyb - principal component analysis to separate the sea level signal into spatial (empirical orthogonal function maps) and temporal (principal component time series) component <br>
+s03_GMMnumberOfClasses.ipynb - calculates silhouette score and Bayesian Information Criterion for a span of class numbers to find the best one <br>
+s04_GMMensemble.ipynb - main script; applies an ensemble of Gaussian Mixture Models on stacked EOF maps <br>
+plot_classification.m - Matlab script used to plot the results of one ensemble (classes and likelihood)
